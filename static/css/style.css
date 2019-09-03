@@ -74,7 +74,7 @@ select {
 }
 
 #table-area th {
-  text-align: center;
+  text-align: left;
 }
 
 #table-area th:first-child,
@@ -136,6 +136,11 @@ select {
 .form-control:-moz-placeholder {
   /* Firefox 18- */
   color: #8e979f;
+}
+
+.btn-position{
+  margin-left: 25px;
+  margin-bottom: 20px;
 }
 
 /* media queries which will only be activated at specific screen sizes */
