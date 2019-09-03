@@ -32,8 +32,9 @@ function buildUFOTable(){
     // Filter the data based on filter criterion
     var newTable = tableData.filter(selectUFOData);
 
+    // Populate total sightings 
     document.getElementById("totalUFO").innerHTML = newTable.length;
-    
+
     // Reference the ufo-table body and clear table's content
     ufoTableBody = document.getElementById("ufo-table").getElementsByTagName("tbody")[0];
     cleanupUFOTable();
