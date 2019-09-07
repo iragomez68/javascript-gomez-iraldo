@@ -12,8 +12,7 @@
 
 <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="static/js/data.js"></script>
-  <script src="static/js/app.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
   <div class="wrapper">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -62,7 +61,15 @@
                   </div>
                   <p class="filter list-group-item">Total sightings: <span id = "totalUFO"></span></p>
                   <br>
-                  <button id="filter-btn" type="button" class="btn btn-default btn-position" onclick = "buildUFOTable()">Filter Table</button>
+
+                  <!-- To use javascript DOM comment these 2 buttons -->
+                  <button id="search-btn" type="button" class="btn btn-default btn-position">Search</button>
+                  <button id="reset-btn" type="button" class="btn btn-default btn-position" >Reset</button>
+
+                  <!-- To use javascript DOM uncomment these 2 buttons -->
+                  <!-- <button id="search-btn" type="button" class="btn btn-default btn-position" onclick="buildUFOTable">Search</button>
+                  <button id="reset-btn" type="button" class="btn btn-default btn-position" onclick="resetUFOTable">Reset</button> -->
+
                 </form>
               </div>
             </div>
@@ -95,5 +102,7 @@
 
 
 </body>
-
+<script src="static/js/data.js"></script>
+<script src="static/js/app_d3.js"></script>
+<!-- <script src="static/js/app_dom.js"></script> -->
 </html>
