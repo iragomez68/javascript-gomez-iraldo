@@ -48,3 +48,18 @@ function buildUFOTable(){
         });
     });
 };
+
+function resetUFOTable(){
+    // Delete all table rows
+    cleanupUFOTable();
+
+    // Cleanup all the fileter values
+    document.getElementById("datetime").value = "";
+    document.getElementById("city").value = "";
+    document.getElementById("state").value = "";
+    document.getElementById("country").value = "";
+    document.getElementById("shape").value = "";
+
+     // Cleanup total 
+    document.getElementById("totalUFO").innerHTML = "";
+};
